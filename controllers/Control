@@ -1,7 +1,4 @@
 <?php
-
-//include('ShowDataTimeLine.php');
-//$showdatatimeline = new ShowDataTimeLine();
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
 
@@ -11,7 +8,6 @@ class Control extends CI_Controller {
         parent::__construct();
         $this->load->model('InteractiveDataProfile');
         $this->load->model('InteractiveDataPost');
-//        $this->load->library('mongodb');
     }
 
     public function index($error = '') {
@@ -69,12 +65,7 @@ class Control extends CI_Controller {
                         $data['author_name'] = $author->name;
                     }
                 }
-//                require_once(APPPATH.'controllers/ShowDataTimeLine.php');
-//                include("ShowDataTimeLine.php");
-//                $showdatatimeline = new ShowDataTimeLine();
-//                $showdatatimeline->index();
                 $this->load->view('TimelineView', $dataLogin);
-//                call_user_func(array(ShowDataTimeLine::class, 'index'),$id);
             } else {
                 $query_checkemail = $this->InteractiveDataProfile->GetProfileWithUser_CheckExist($Email);
                 if ($query_checkemail->num_rows() == 1) {
@@ -89,7 +80,7 @@ class Control extends CI_Controller {
     }
     public function CreateAccount(){
         $this->load->model('InteractiveDataHomeTown');
-        $Data['hometown']=$this->InteractiveDataHomeTown-> GetHomeTown();
+        $Data['hometown']=$this->InteractiveDataHomeTown->GetHomeTown();
         $this->load->view('CreateAccountView',$Data);
     }
     public function CreateAccountOne(){
