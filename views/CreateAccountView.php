@@ -23,7 +23,7 @@
 			<div class="title_CA">Tạo tài khoản</div>
 			<!--end class title_CA-->
 			<div class="logIn_CA">
-				<a href="">đăng nhập</a>
+				<a href="<?php echo base_url() . 'index.php/Login' ?>">đăng nhập</a>
 			</div>
 			<!--end class logIn_CA-->
 			<div class="clear"></div>
@@ -42,7 +42,7 @@
 					<div class="form-group">
 						<div class="form-group name">
 							<label class="lb">
-								Tên đăng nhập :
+								Tên :
 							</label>
 							<input type="text" name="UserName" class="form-control">
 							<div class="clear"></div>
@@ -72,54 +72,25 @@
 							</label>
 							<!-- <input type="text" name="LAST_NAME" class="form-control"> -->
 							<select class="form-control year" name="Year">
-								<option>1997</option>
+								<?php
+                                    					for ($i = 2017; $i >= 1905; $i--) {
+                                        				echo '<option>' . $i . '</option>';
+                                    					}
+                                    				?>
 							</select>
 							<select class="form-control month" name="Month">
-								<option>1</option>
-								<option>2</option>
-								<option>3</option>
-								<option>4</option>
-								<option>5</option>
-								<option>6</option>
-								<option>7</option>
-								<option>8</option>
-								<option>9</option>
-								<option>10</option>
-								<option>11</option>
-								<option>12</option>
+								<?php
+								    for ($i = 1; $i <= 12; $i++) {
+									echo '<option>' . $i . '</option>';
+								    }
+								?>
 							</select>
 							<select class="form-control day" name="Day">
-								<option>01</option>
-								<option>02</option>
-								<option>03</option>
-								<option>04</option>
-								<option>05</option>
-								<option>06</option>
-								<option>07</option>
-								<option>08</option>
-								<option>09</option>
-								<option>10</option>
-								<option>11</option>
-								<option>12</option>
-								<option>13</option>
-								<option>14</option>
-								<option>15</option>
-								<option>16</option>
-								<option>17</option>
-								<option>18</option>
-								<option>19</option>
-								<option>20</option>
-								<option>21</option>
-								<option>22</option>
-								<option>23</option>
-								<option>24</option>
-								<option>25</option>
-								<option>26</option>
-								<option>27</option>
-								<option>28</option>
-								<option>29</option>
-								<option>30</option>
-								<option>31</option>
+								<?php
+								    for ($i = 1; $i <= 31; $i++) {
+									echo '<option>' . $i . '</option>';
+								    }
+								?>
 							</select>
 							<div class="clear"></div>
 						</div>
@@ -129,37 +100,27 @@
 								Quê quán :
 							</label>
 							<select class="form-control select-box" name="HomeTown">
-								<option>Hà Nội</option>
-								<option>Hồ Chí Minh</option>
-								<option>Nam Định</option>
-								<option>Ba Vì</option>
-								<option>Nghệ An</option>
-								<option>Thanh Hóa</option>
+								<?php
+								    foreach ($hometown as $row) {
+									$hometown = $row->name;
+									echo '<optione>'.$hometown.'<option>';
+								    }
+								?>
 							</select>
 							<div class="clear"></div>
 						</div>
 						<div class="form-group highschool">
 							<label class="lb">
-								Trường :
+								Trường THPT:
 							</label>
-							<select class="form-control select-box" name="HighSchool">
-								<option>THPT Mỹ Đức A</option>
-								<option>THPT Mỹ Đức B</option>
-								<option>THPT Mỹ Đức C</option>
-								<option>THPT Mỹ Đức D</option>
-							</select>
+							<input type="text" name="UserName" class="form-control">
 							<div class="clear"></div>
 						</div>
 						<div class="form-group university">
 							<label class="lb">
 								Đại học :
 							</label>
-							<select class="form-control select-box" name="University">
-								<option>Khoa học Tự nhiên</option>
-								<option>Khoa học Xã hội và Nhân Văn</option>
-								<option>Kinh tế quốc dân</option>
-								<option>Bách Khoa</option>
-							</select>
+							<input type="text" name="UserName" class="form-control">
 							<div class="clear"></div>
 						</div>
 						<div class="form-group "></div>
