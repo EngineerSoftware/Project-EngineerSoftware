@@ -14,32 +14,19 @@ declare(strict_types=1);
 
 	    public function test_GetProfileWithUser_method1():void
 	    {
-	    	$this->assertInstanceOf(
-	    		InteractiveDataProfile::class,
-	    		InteractiveDataProfile::GetProfileWithUser("minhduynamdinh@gmail.com","123456")
-	    	);
+	    	$test = new \InteractiveDataProfile;
+
+	    	$this->assertInternalType('object', $test->GetProfileWithUser("tuandoan0603@gmail.com","123456"));
+	    	$this->assertCount(1, $test->GetProfileWithUser("tranminh@gmail.com","123456"));
 	    }
 	    public function test_GetProfileWithUser_method2():void
 	    {
-	    	$this->assertInstanceOf(
-	    		InteractiveDataProfile::class,
-	    		InteractiveDataProfile::GetProfileWithUser("tuandoan0603@gmail.com","123456")
-	    	);
+	    	$test = new \InteractiveDataProfile;
+
+	    	$this->assertInternalType('object', $test->GetProfileWithUser("nguyenhung@gmail.com","456789"));
+	    	$this->assertCount(1, $test->GetProfileWithUser("nguyenvu@gmail.com","123456"));
 	    }
-	    public function test_GetProfileWithUser_method3():void
-	    {
-	    	$this->assertInstanceOf(
-	    		InteractiveDataProfile::class,
-	    		InteractiveDataProfile::GetProfileWithUser("nguyenhung@gmail.com","654321")
-	    	);
-	    }
-	    public function test_GetProfileWithUser_method4():void
-	    {
-	    	$this->assertInstanceOf(
-	    		InteractiveDataProfile::class,
-	    		InteractiveDataProfile::GetProfileWithUser("thanhnam@gmail.com","654321")
-	    	);
-	    }
+	    
 	    public function test_GetProfileWithUser_CheckExist_method1()
 	    {
 	    	$test = new \InteractiveDataProfile;
@@ -65,7 +52,7 @@ declare(strict_types=1);
 	    }
 	     public function test_InsertProfile_method(){
 	     	$test = new \InteractiveDataProfile;
-	     	$this->$this->assertTrue($test->InsertProfile("nguyen thi mai","nguyenmai@gmail.com","123456","21/11/1991","Ho Chi Minh","thpt tan lap","Dai hoc Khoa hoc Tu nhien");
+	     	$this->$this->assertTrue($test->InsertProfile("nguyen thi mai","nguyenmai@gmail.com","123456","21/11/1991","Ho Chi Minh","thpt tan lap","Dai hoc Khoa hoc Tu nhien"));
 	     }
 	    {
 
