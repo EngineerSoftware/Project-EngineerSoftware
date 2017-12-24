@@ -9,8 +9,12 @@ class InteractiveDataStatus extends CI_Model {
 		parent::__construct();
 		
 	}
-	public function GetStatus(){
-
+	public function GetStatus($IdUser){
+		$this->load->library('mongodb');
+		$Temp = array('id_user'=>$IdUser);
+		$Result = $this->mongodb->where($Temp)->get('status')->result();
+		
+		return $Result;
 	}
 	public function InsertStatus(){
 		
