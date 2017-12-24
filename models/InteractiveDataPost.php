@@ -21,12 +21,11 @@ class InteractiveDataPost extends CI_Model {
 		$this->mongodb->insert('post',$Data);	
 
 	}
-	public function InsertPost(){
-
-	}
- 	public function UpdatePost(){
- 		
- 	}
+	public function getNameAuthor($id_author) {
+		$data = array("_id" => "$id_author");
+		$result = $this->mongodb->where($data)->get('profile');
+		return $result;
+    	}
 }
 
 /* End of file InteractiveDataPost.php */
