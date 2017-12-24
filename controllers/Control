@@ -112,6 +112,8 @@ class Control extends CI_Controller {
 
             $query = $this->InteractiveDataProfile->GetProfileWithUser_CheckExist($Email);
             if ($query->num_rows() == 0) {
+                $this->load->model('InteractiveDataProfile');
+                $Data1['db']=$this->InteractiveDataProfile->GetProfileWithHomeTown($HomeTown);
                 $query_insert = $this->InteractiveDataProfile->InsertProfile($Username, $Email, $Password, $Birth, $HomeTown, $HighSchool, $University);
                 if ($query_insert) {
                      $error = 'Create account failed! Please try again!';
@@ -121,7 +123,7 @@ class Control extends CI_Controller {
                      echo '<script language="javascript">';
                     echo 'alert("Create account successful")';
                     echo '</script>';
-                    //$this->load->model('InteractiveDataPost');
+                    $this->load->view('FindFriendNewAccountView', $Data1);
                 }
             } else {
                 $error = 'The email has been used. Try to other email.';
@@ -132,6 +134,7 @@ class Control extends CI_Controller {
 
             
     }
+
     public function message(){
         
     }
