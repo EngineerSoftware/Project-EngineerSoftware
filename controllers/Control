@@ -92,6 +92,46 @@ class Control extends CI_Controller {
         $Data['hometown']=$this->InteractiveDataHomeTown-> GetHomeTown();
         $this->load->view('CreateAccountView',$Data);
     }
+    public function CreateAccountOne(){
+        $this->form_validation->set_rules('UserName', 'Username', 'required');
+        $this->form_validation->set_rules('Email', 'Email', 'required|valid_email'); // Email is requried
+        $this->form_validation->set_rules('PassWord', 'Password', 'required|min_length[8]'); // Password required
+        if ($this->form_validation->run() == FALSE) {
+            $this->CreateAccount();
+        } else {
+            $Username = $this->input->post('UserName');
+            $Email = $this->input->post('Email');
+            $Password = $this->input->post('PassWord');
+            $Year = $this->input->post('Year');
+            $Month = $this->input->post('Month');
+            $Day = $this->input->post('Day');
+            $Birth = $Day . "/" . $Month . "/" . $Year;
+            $HomeTown = $this->input->post('HomeTown');
+            $HighSchool = $this->input->post('HighSchool');
+            $University = $this->input->post('University');
+
+            $query = $this->InteractiveDataProfile->GetProfileWithUser_CheckExist($Email);
+            if ($query->num_rows() == 0) {
+                $query_insert = $this->InteractiveDataProfile->InsertProfile($Username, $Email, $Password, $Birth, $HomeTown, $HighSchool, $University);
+                if ($query_insert) {
+                     $error = 'Create account failed! Please try again!';
+                    $this->index($error);
+                   
+                } else {
+                     echo '<script language="javascript">';
+                    echo 'alert("Create account successful")';
+                    echo '</script>';
+                    //$this->load->model('InteractiveDataPost');
+                }
+            } else {
+                $error = 'The email has been used. Try to other email.';
+                $this->index($error);
+            }
+        }
+            
+
+            
+    }
     public function message(){
         
     }
