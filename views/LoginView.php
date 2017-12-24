@@ -37,16 +37,13 @@
             <div class="logIn">
                 <div class="title_logIn">Đăng Nhập</div>
                 <div class="createAccount_logIn">
-                    <a href="<?php echo base_url(); ?>index.php/Control/CreateAccount">tạo tài khoản</a>
+                    <a href="<?php echo base_url(); ?>index.php/CreateAccount">tạo tài khoản</a>
                 </div>
                 <div class="clear"></div>
                 <div>
                     <br>
                 </div>
-                <?php
-                echo form_open('login/CheckInformation');
-                ?>
-                <form class="form_auth_logIn" action="Control/CheckInformation" method="post" enctype="multidata/form-data">
+                <form class="form_auth_logIn" action="index.php/check" method="post" enctype="multidata/form-data">
                       <div class="form-group">
                       <input type="text" name="Email" class="form-control" placeholder="E-mail">
                     </div>
