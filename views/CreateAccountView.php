@@ -31,7 +31,7 @@
 			<div>
 				<br>
 			</div>
-			<form action="AddData_controller/inserData_controller" method="post" enctype="multidata/form-data">
+			<form action="<?php echo base_url(); ?>index.php/Control/CreateAccountOne" method="post" enctype="multidata/form-data">
 				<div class="form_CA">
 					<div class="b_12 tac" style="display: none">
 						<div class="clb error_message">
