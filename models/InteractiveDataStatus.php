@@ -16,11 +16,16 @@ class InteractiveDataStatus extends CI_Model {
 		
 		return $Result;
 	}
-	public function InsertStatus(){
-		
+	public function InsertStatus($IdUser,$IdAuthor,$Status){
+		$this->load->library('mongodb');
+		$Data = array('id_user'=>$IdUser,'id_author'=>$IdAuthor,'status'=>$Status);
+		$Result=$this->mongodb->insert('status',$Data);
 	}
-	public function UpdateStatus(){
-		
+	public function UpdateStatus($IdUser,$IdAuthor,$Status){
+		$this->load->library('mongodb');
+		$Data=array('id_user'=>$IdUser,'id_author'=>$IdAuthor,'status'=>$Status);
+		$Temp=array('id_user'=>$IdUser);
+		$this->mongodb->update('status',$Data,$Temp). " documents updated.";	
 	}
 }
 
