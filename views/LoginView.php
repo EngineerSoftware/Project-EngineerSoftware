@@ -37,7 +37,7 @@
             <div class="logIn">
                 <div class="title_logIn">Đăng Nhập</div>
                 <div class="createAccount_logIn">
-                    <a href="<?php echo base_url(); ?>index.php/CreateAccount">tạo tài khoản</a>
+                    <a href="<?php echo base_url(); ?>index.php/Control/CreateAccount">tạo tài khoản</a>
                 </div>
                 <div class="clear"></div>
                 <div>
