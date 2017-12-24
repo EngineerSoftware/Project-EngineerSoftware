@@ -9,8 +9,11 @@ class InteractiveDataFriendRelation extends CI_Model {
 		parent::__construct();
 		
 	}
-	public function GetFriendRelation(){
-
+	public function GetFriendRelation($IdUser){
+		$this->load->library('mongodb');
+		$Temp=array('id1'=>$IdUser);
+		$result = $this->mongodb->where($Temp)->get('friend_relation');
+		return $result;
 	}
 	public function InsertFriendRelation(){
 		
