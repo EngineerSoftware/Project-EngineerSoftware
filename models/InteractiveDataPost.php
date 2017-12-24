@@ -9,7 +9,16 @@ class InteractiveDataPost extends CI_Model {
 		parent::__construct();
 		
 	}
-	public function getPost(){
+	public function GetPost($IdUser){
+		$this->load->library('mongodb');
+		$Temp = array('id_user'=>$IdUser);
+		$Result = $this->mongodb->where($Temp)->get('post')->result();
+		return $Result;
+	}
+	public function InsertPostNonImage($IdUser,$IdAuthor,$Time,$Content,$Like_Yourself,$Like_Number){
+		$this->load->library('mongodb');
+		$Data=array('id_user'=>$IdUser,'id_author'=>$IdAuthor,'time'=>$Time,'content'=>$Content,'like_yourself'=>$Like_Yourself,'like_number'=>$Like_Number);
+		$this->mongodb->insert('post',$Data);	
 
 	}
 	public function InsertPost(){
