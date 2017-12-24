@@ -4,8 +4,8 @@ declare(strict_types=1);
 	 * summary
 	 */
 	use PHPUnit\Framework\TestCase;
-	use JsonSerializable;
-	class SampleTest extends \PHPUnit\Framework\TestCase implements JsonSerializable
+	
+	class SampleTest extends \PHPUnit\Framework\TestCase 
 	{
 	    /**
 	     * summary
