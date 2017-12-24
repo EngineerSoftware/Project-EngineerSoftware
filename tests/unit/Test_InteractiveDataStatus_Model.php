@@ -13,5 +13,11 @@ class Test_InteractiveDataStatus_Model extends \PHPUnit\Framework\TestCase {
 			"status" : 1
 		}]', $test->GetStatus("5a35e17dd7d69e7bfb31379e"));
 	}
+	public function test_GetStatus_method2()
+	{
+		$test = new \InteractiveDataStatus;
+		$this->assertEmpty($test->GetStatus("5a35e17dd7d69e7bfb313"));
+	}
+	
 }
 ?>
