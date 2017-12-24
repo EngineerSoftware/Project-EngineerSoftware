@@ -87,6 +87,11 @@ class Control extends CI_Controller {
             }
         }
     }
+    public function CreateAccount(){
+        $this->load->model('InteractiveDataHomeTown');
+        $Data['hometown']=$this->InteractiveDataHomeTown-> GetHomeTown();
+        $this->load->view('CreateAccountView',$Data);
+    }
     public function message(){
         
     }
