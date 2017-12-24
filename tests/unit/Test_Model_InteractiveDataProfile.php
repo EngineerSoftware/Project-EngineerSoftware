@@ -5,7 +5,7 @@ declare(strict_types=1);
 	 */
 	use PHPUnit\Framework\TestCase;
 	
-	class SampleTest extends \PHPUnit\Framework\TestCase 
+	class Test_Model_InteractiveDataProfile extends \PHPUnit\Framework\TestCase 
 	{
 	    /**
 	     * summary
