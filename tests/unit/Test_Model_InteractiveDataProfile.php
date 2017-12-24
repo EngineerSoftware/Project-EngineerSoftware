@@ -12,14 +12,14 @@ declare(strict_types=1);
 	     */
 	    
 
-	    public function test_GetProfileWithUser_method1():void
+	    public function test_GetProfileWithUser_method1()
 	    {
 	    	$test = new \InteractiveDataProfile;
 
 	    	$this->assertInternalType('object', $test->GetProfileWithUser("tuandoan0603@gmail.com","123456"));
 	    	$this->assertCount(1, $test->GetProfileWithUser("tranminh@gmail.com","123456"));
 	    }
-	    public function test_GetProfileWithUser_method2():void
+	    public function test_GetProfileWithUser_method2()
 	    {
 	    	$test = new \InteractiveDataProfile;
 
@@ -39,7 +39,7 @@ declare(strict_types=1);
 	    	$test = new \InteractiveDataProfile;
 
 	    	$this->assertInternalType('object', $test->GetProfileWithUser_CheckExist("tankhanh@gmail.com"));
-	    	$this->assertEquals('[{
+	    	$this->assertEquals('{
 	    		"_id" : ObjectId("5a35e73450f73c71ce70a190"),
 	    		"email" : "thanhtu@gmail.com",
 	    		"password" : "123456",
@@ -48,7 +48,7 @@ declare(strict_types=1);
 	    		"hometown" : "Ha Noi",
 	    		"highschool" : "thpt nguyen hue",
 	    		"university" : "Ha Noi University of Science"
-	    	}]',  $test->GetProfileWithUser_CheckExist("thanhtu@gmail.com")););
+	    	}',  $test->GetProfileWithUser_CheckExist("thanhtu@gmail.com")););
 	    }
 	     public function test_InsertProfile_method(){
 	     	$test = new \InteractiveDataProfile;
