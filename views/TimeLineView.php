@@ -30,7 +30,7 @@
                     <div class="_cy6">
                         <div class="_4kny">
                             <div class="_1k67">
-                                <a href="" class="profile">
+                                <a href="<?php echo base_url() . 'index.php/Profile' ?>" class="profile">
                                     <img  src="<?php echo base_url(); ?>Picture/user.png">
                                     <span>
                                         <?php
@@ -42,21 +42,21 @@
                         </div>
                         <div class="_4kny">
                             <div class="_1k67">
-                                <a href="">
+                                <a href="<?php echo base_url() . 'index.php/TimeLine' ?>">
                                     Home
                                 </a>
                             </div>
                         </div>
                         <div class="_4kny">
                             <div class="_1k67">
-                                <a href="">
+                                <a href="<?php echo base_url() . 'index.php/FindFriend' ?>">
                                     Find Friend
                                 </a>
                             </div>
                         </div>
                         <div class="_4kny">
                             <div class="_1k67">
-                                <a href="./SignIn.html">
+                                <a href="<?php echo base_url() . 'index.php/Login' ?>">
                                     Log Out
                                 </a>
                             </div>
@@ -76,7 +76,7 @@
             <div class="globalContainer">
                 <div class="leftContainer">
                     <div class="user">
-                        <a href="">
+                        <a href="<?php echo base_url() . 'index.php/Profile' ?>">
                             <img src="<?php echo base_url(); ?>Picture/user.png">
                             <div>
                                 <?php
@@ -90,21 +90,21 @@
                     <div id="universal-nav" class="homesideNav">
                         <ul class="list-group">
                             <li class="list-group-item">
-                                <a href="#">
+                                <a href="<?php echo base_url() . 'index.php/TimeLine' ?>">
                                     <img src="<?php echo base_url(); ?>Picture/newfeed2.jpg">
                                     <div class="linkWrap newfeed">News Feed</div>
                                     <div class="clear"></div>
                                 </a>
                             </li>	
                             <li class="list-group-item">
-                                <a href="">
+                                <a href="<?php echo base_url() . 'index.php/Notification' ?>">
                                     <img src="<?php echo base_url(); ?>Picture/notification.jpg">
                                     <div class="linkWrap notification">Notifications</div>
                                     <div class="clear"></div>
                                 </a>
                             </li>			
                             <li class="list-group-item">
-                                <a href="./Message.html">
+                                <a href="<?php echo base_url() . 'index.php/Message' ?>">
                                     <img src="<?php echo base_url(); ?>Picture/inbox.jpg">
                                     <div class="linkWrap inbox">Message</div>
                                     <div class="clear"></div>
@@ -117,7 +117,7 @@
                         <h4 class="navHeader" style="font-size: 13px; font-weight: bold;">Explore</h4>
                         <ul class="list-group">
                             <li class="list-group-item">
-                                <a href="">
+                                <a href="<?php echo base_url() . 'index.php/FindFriend' ?>">
                                     <img src="<?php echo base_url(); ?>Picture/findfriend.jpg">
                                     <div class="linkWrap findfriend">Find Friend</div>
                                 </a>
