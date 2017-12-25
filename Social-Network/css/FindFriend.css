@@ -1,0 +1,253 @@
+.body
+{
+	background: #e9ebee;
+}
+
+.header
+{
+	background: #2FC6F7;
+	height: 10%;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+}
+
+.image-form
+{
+	margin-top: 11.5px;
+	margin-left: 60px;
+	float: left;
+	border-radius: 4px;
+
+}
+
+.search-form
+{
+	margin-left: 40px;
+	margin-top: 11.5px;
+	float: left;
+	border: 1px solid lightblue;
+	border-radius: 40px;
+	width: 30%;
+	background: white;
+	height: 40px;
+	line-height: 34px;
+}
+
+.search-input
+{
+	background: none;
+	border: white;
+	width: 380px;
+	padding-left: 15px; 
+}
+
+.search-icon
+{
+	cursor: pointer;
+}
+
+.profile a
+{
+	
+}
+
+.profile img
+{
+	margin-left: 50px;
+	border-radius: 50%;
+	height: 38px;
+	width: 38px;
+}
+
+.profile span
+{
+	font-weight: bold;
+	color: white;
+	height: 40px;
+	line-height: 63px;
+
+}
+
+._1k67 a
+{
+	font-weight: bold;
+	float: left;
+	color: white;
+	height: 40px;
+	line-height: 63px;
+	margin-left: 30px;
+}
+
+._1k67 a:hover
+{
+	text-decoration: none;
+	color: white;
+}
+
+.globalContainer
+{
+	/*position: fixed;*/
+	width: 100%;
+	margin-left: 60px;
+}
+
+.centerContainer
+{
+	position: absolute;
+	width: 76%;
+	top: 13%;
+}
+
+.partOfCenter
+{
+	width: 48%;
+	background: #fff;
+	border-radius: 4px;
+}
+
+.suggestionFriend
+{
+	float: left;
+	margin-right: 4%;
+}
+
+.requestFriend
+{
+	float: left;
+}
+
+.titleFriend h3
+{
+	border-bottom: 1px solid lightgray;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 5px 20px;
+	margin: 0px 0px;
+}
+
+.listFindFriend
+{
+	display: table;
+	width: 100%;
+	padding: 0px 20px;
+}
+
+.itemOfList
+{
+	display: table;
+	border-bottom: 1px solid lightgray;
+	width: 100%;
+	padding: 10px 0px 10px 0px;
+}
+
+.itemOfList div
+{
+}
+
+.itemOfList div img
+{
+	cursor: pointer;
+	float: left;
+	width: 80px;
+	height: 80px;
+}
+
+.itemOfList div h4
+{
+	color: #2FC6F7;
+	cursor: pointer;
+	float: left;
+	height: 20px;
+	margin: 30px 10px;
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.btns-request
+{
+	float: right;
+	padding-top: 26px;
+}
+
+.btns-request input
+{
+	border: 1px solid #f0f1f2;
+	border-radius: 2px;
+	font-weight: bold;
+	font-size: 13px;
+	height: 28px;
+}
+
+.rightContainer
+{
+	float: right;
+	position: fixed;
+	top: 10%;
+	right: 0px;
+	width: 17%; 
+	height: 90%;
+	padding-left: 8px;
+	border-left: 1px solid lightgray;
+	overflow: scroll;
+	overflow-x: hidden;
+	overflow-y: visible;
+}
+
+button
+{
+	background: #2FC6F7;
+}
+
+button:hover
+{
+	color: white !important;
+	font-weight: bold;
+}
+
+ul
+{
+	list-style-type: none;
+	padding-left: 0px;
+}
+
+li._42fz
+{
+	padding: 4px 0px;
+}
+
+.avaChat img
+{
+	float: left;
+	width: 34px;
+	height: 34px;
+	border-radius: 50%;
+}
+
+.nameChat
+{
+	/*float: left;*/
+	line-height: 35px;
+	padding-left: 40px;
+}
+
+.activeChat span
+{
+	background: #2FC6F7;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	float: right;
+	line-height: 30px;
+	margin-top: 12px;
+}
+
+a:focus, a:hover
+{
+	text-decoration: none !important;
+}
+
+input:focus
+{
+	outline: 0 none;
+}

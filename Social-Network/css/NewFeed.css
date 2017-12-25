@@ -1,0 +1,398 @@
+.body
+{
+	background: #e9ebee;
+}
+
+.header
+{
+	background: #2FC6F7;
+	height: 63px;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+}
+
+.image-form
+{
+	margin-top: 11.5px;
+	margin-left: 60px;
+	float: left;
+	border-radius: 4px;
+
+}
+
+.search-form
+{
+	margin-left: 40px;
+	margin-top: 11.5px;
+	float: left;
+	border: 1px solid lightblue;
+	border-radius: 40px;
+	width: 30%;
+	background: white;
+	height: 40px;
+	line-height: 34px;
+}
+
+.search-input
+{
+	background: none;
+	border: white;
+	width: 380px;
+	padding-left: 15px; 
+}
+
+.search-icon
+{
+	cursor: pointer;
+}
+
+.profile a
+{
+	
+}
+
+.profile img
+{
+	margin-left: 50px;
+	border-radius: 50%;
+	height: 38px;
+	width: 38px;
+}
+
+.profile span
+{
+	font-weight: bold;
+	color: white;
+	height: 40px;
+	line-height: 63px;
+
+}
+
+._1k67 a
+{
+	font-weight: bold;
+	float: left;
+	color: white;
+	height: 40px;
+	line-height: 63px;
+	margin-left: 30px;
+}
+
+._1k67 a:hover
+{
+	text-decoration: none;
+	color: white;
+}
+
+.globalContainer
+{
+	/*position: fixed;*/
+	width: 100%;
+	margin-left: 60px;
+}
+
+.leftContainer
+{
+	float: left;
+	width: 180px;
+	height: 566px;
+	padding-top: 20px;
+	position: fixed;
+	top: 63px;
+}
+
+div.user:hover
+{
+	background-color: #f6f7f9;
+	border: 1px solid #dddfe2;
+}
+
+.user
+{
+	padding: 5px 5px;
+	margin-bottom: 10px;
+}
+
+.user a img
+{
+	float: left;
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+}
+
+.user a div
+{
+	line-height: 25px;
+	color: black;
+	padding-left: 30px;
+}
+
+.list-group-item
+{
+	padding: 5px 5px 5px 5px !important;
+	border: none !important;
+	background: none !important;
+	font-size: 13px;
+	line-height: 25px;
+}
+
+.list-group-item img
+{
+	float: left;
+}
+
+.list-group-item div
+{
+	padding-left: 30px;
+	color: black;
+}
+
+.list-group-item a img
+{
+	width: 24px;
+	height: 24px;
+	background-image: none;
+}
+
+li.list-group-item:hover
+{
+	background-color: #f6f7f9 !important;
+	border: 1px solid #dddfe2 !important;	
+	color: black;
+}
+
+.centerContainer
+{
+	float: left;
+	width: 800px;
+	margin-left: 30px;
+	margin-top: 20px;
+	position: absolute;
+	top: 63px;
+	left: 240px;
+}
+
+.pagelet_composer
+{
+	border: 1px solid #dddfe2;
+	border-radius: 3px;
+	background: #fff;
+	padding: 10px 10px;
+}
+
+.titleComposer
+{
+	border-bottom: 1px solid #f0f1f2;
+}
+
+.editPost
+{
+	width: 100%;
+	/*border: none;*/
+	border: 1px solid #f0f1f2;
+	padding: 10px 12px;
+}
+
+.acceptPost
+{
+	color: white;
+	line-height: 10px !important;
+	font-weight: bold !important;
+	width: 80px;
+	height: 30px;
+}
+
+.detailPost
+{
+	border: 1px solid #dddfe2;
+	background: #fff;
+	margin-top: 15px;
+}
+
+.contentPost
+{
+	padding: 10px 20px 0px 20px;
+}
+
+.head-post
+{
+	margin-bottom: 20px;
+}
+
+.head-post img
+{
+	float: left;
+	width: 43px;
+	height: 43px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.head-post div a
+{
+	color: #2FC6F7;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.head-post div span
+{
+	color: #90949c;
+	font-size: 14px;
+}
+
+.body-post p
+{
+	font-size: 15px;
+	border-bottom: 1px solid #e5e5e5;
+	padding-bottom: 12px;
+	margin-bottom: 0px;
+}
+
+.body-post img
+{
+	width: 758px;
+}
+
+.like-cmt
+{
+	margin-left: 20px;
+	padding: 10px 0px;
+}
+
+.like-cmt span
+{
+	margin-right: 20px;
+}
+
+.like-cmt span span
+{
+	margin-right: 0px;
+}
+
+.like-cmt span a
+{
+	font-weight: bold;
+	font-size: 15px;
+	font-family: Arial;
+	color: #4e525a;
+}
+
+.comment
+{
+	border-top: 1px solid #e5e5e5;
+	background: #f6f7f9;
+	display: table;
+	padding-bottom: 5px;
+}
+
+.content-cmt
+{
+	width: 758px;
+	margin: 0px 20px;
+	padding: 5px 0px;
+	display: table;
+}
+
+.content-cmt img
+{
+	float: left;
+	width: 34px;
+	height: 34px;
+	border-radius: 50%;
+	margin-right: 5px;
+}
+
+.content-cmt div
+{
+	font-size: 12px;
+	padding-top: 5px;
+}
+
+.content-cmt div a
+{
+	font-weight: bold;
+}
+
+.content-cmt input
+{
+	border-radius: 40px;
+	width: 710px;
+	height: 34px;
+}
+
+.rightContainer
+{
+	float: right;
+	position: fixed;
+	top: 63px;
+	right: 0px;
+	/*margin-right: 10px;*/
+	width: 16%; 
+	height: 90%;
+	padding-left: 8px;
+	border-left: 1px solid lightgray;
+	overflow: scroll;
+	overflow-x: hidden;
+	overflow-y: visible;
+}
+
+button
+{
+	background: #2FC6F7;
+}
+
+button:hover
+{
+	color: white !important;
+	font-weight: bold;
+}
+
+ul
+{
+	list-style-type: none;
+	padding-left: 0px;
+}
+
+li._42fz
+{
+	padding: 4px 0px;
+}
+
+.avaChat img
+{
+	float: left;
+	width: 34px;
+	height: 34px;
+	border-radius: 50%;
+}
+
+.nameChat
+{
+	/*float: left;*/
+	line-height: 35px;
+	padding-left: 40px;
+}
+
+.activeChat span
+{
+	background: #2FC6F7;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	float: right;
+	line-height: 30px;
+	margin-top: 12px;
+}
+
+a:focus, a:hover
+{
+	text-decoration: none !important;
+}
+
+input:focus
+{
+	outline: 0 none;
+}

@@ -1,0 +1,155 @@
+.body
+{
+	background: #2fc6f7;
+}
+
+.header
+{
+	margin: 0px 150px; 
+}
+
+.socialnetwork
+{
+	color: white;
+	font-size: 60px;
+	padding-top: 53px;
+}
+
+a:focus, a:hover
+{
+	text-decoration: none !important;
+}
+
+.content
+{
+	margin: 0px 150px;
+	height: 600px;
+}
+
+.logo
+{
+	width: 60%;
+	float: left;
+	height: 600px;
+	color: white;
+}
+
+img
+{
+	margin-top: 55px;
+	margin-left: 160px;
+	width: 40%;
+}
+
+.home_title
+{
+	margin-bottom: 9px;
+	font-size: 29px;
+}
+
+.introduce p
+{
+	margin: 0px 0px;
+	font-size: 17px;
+}
+
+.logIn
+{
+	padding: 23px 35px;
+	width: 358px;
+	height: 400px;
+	background: white;
+	border-radius: 5px;
+	float: right;
+}
+
+.title_logIn
+{
+	float: left;
+	font-size: 30px;
+	line-height: 35px;
+	font-weight: bold;
+}
+
+.createAccount_logIn
+{
+	float: right;
+	line-height: 35px;
+}
+
+.form-group
+{
+	margin-bottom: 21px;
+}
+
+.form-control
+{
+	height: 50px !important;
+}
+
+.btn
+{
+	margin-left: 84px;
+	margin-right: 84px;
+	background-color: #2fc6f7;
+	width: 120px;
+	border-radius: 20px !important;
+	font-weight: bold !important;
+	color: white;
+}
+
+.btn:hover
+{
+	color: white !important;
+	font-weight: bold;
+	background-color: #3fddff;
+}
+
+.form_getpass
+{
+	line-height: 35px;
+	text-align: center;
+}
+
+.createAccount_logIn a 
+{
+	color: #2fc6f7;
+	font-size: 13px;
+	text-transform: uppercase;
+	border-bottom: 2px solid #cdf0ff;
+}
+
+.form_getpass a
+{
+	color: #2fc6f7;
+	font-size: 13px;
+	text-transform: uppercase;
+	border-bottom: 2px solid #cdf0ff;
+}
+
+.createAccount_logIn a:hover
+{
+	color: #2fc6f7;	
+	font-weight: bold;
+	border-bottom: 2px solid #2fc6f7;
+}
+
+.form_getpass a:hover
+{
+	color: #2fc6f7;	
+	font-weight: bold;
+	border-bottom: 2px solid #2fc6f7;
+}
+
+.clear
+{
+	clear: both;
+}
+
+input.form-control
+{
+	height: 50px;
+	width: 100%;
+	padding: 5px 10px;
+	border-radius: 5px;
+}

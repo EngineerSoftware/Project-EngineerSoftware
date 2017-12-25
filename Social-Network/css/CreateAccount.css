@@ -1,0 +1,144 @@
+.body
+{
+	background: #2fc6f7;
+}
+
+.header
+{
+	margin: 0px 150px; 
+}
+
+.socialnetwork
+{
+	color: white;
+	font-size: 60px;
+	padding-top: 53px;
+}
+
+.content_CA
+{
+	margin: 0px auto;
+	padding: 30px 35px;
+	width: 730px;
+	/*height: 660px;*/
+	background: white;
+	border-radius: 5px;
+}
+
+.title_CA
+{
+	float: left;
+	font-size: 35px;
+	line-height: 35px;
+	font-weight: bold;
+	float: left;
+}
+
+.logIn_CA
+{
+	float: right;
+	line-height: 35px;
+}
+
+.logIn_CA a
+{
+	color: #2fc6f7;
+	font-size: 15px;
+	text-transform: uppercase;
+	border-bottom: 2px solid #cdf0ff;
+}
+
+.logIn_CA a:hover
+{
+	color: #2fc6f7;	
+	font-weight: bold;
+	border-bottom: 2px solid #2fc6f7;
+}
+
+.form-group
+{
+	margin-bottom: 27px !important;
+}
+
+.form-control
+{
+	height: 50px !important;
+}
+
+.day
+{
+	width: 70px !important;
+	margin-right: 40px !important;
+	float: right;
+}
+
+.month
+{
+	width: 100px !important;
+	margin-right: 40px !important;
+	float: right;
+}
+
+.year
+{
+	width: 80px !important;
+	margin-right: 50px !important;
+	float: right;
+}
+
+.select-box
+{
+	float: right;
+	margin-right: 50px !important;
+	width: 50% !important;
+}
+
+.btn
+{
+	margin-left: 270px;
+	background-color: #2fc6f7;
+	width: 140px;
+	height: 40px;
+	border-radius: 20px !important;
+	font-weight: bold !important;
+	color: white;
+}
+
+.btn:hover
+{
+	color: white !important;
+	font-weight: bold;
+	background-color: #3fddff;
+}
+
+a
+{
+	text-decoration: none !important;
+}
+
+label
+{
+	float: left;
+	font-size: 19px;
+	color: #7d9199;
+	line-height: 50px;
+	width: 37%;
+	text-align: right;
+	font-family: Verdana;
+}
+
+input.form-control
+{
+	float: right;
+	width: 50% !important;
+	height: 50px;
+	width: 100%;
+	padding: 5px 10px;
+	border-radius: 5px;
+	margin-right: 50px !important;
+}
+
+.clear
+{
+	clear: both;
+}
