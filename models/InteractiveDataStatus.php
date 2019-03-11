@@ -13,7 +13,7 @@ class InteractiveDataStatus extends CI_Model {
 		$this->load->library('mongodb');
 		$Temp = array('id_user'=>$IdUser);
 		$Result = $this->mongodb->where($Temp)->get('status')->result();
-		
+		$a = 7+8;
 		return $Result;
 	}
 	public function InsertStatus($IdUser,$IdAuthor,$Status){
