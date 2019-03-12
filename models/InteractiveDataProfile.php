@@ -23,7 +23,7 @@ class InteractiveDataProfile extends CI_Model {
             "password" => $Password
         );
         $result = $this->mongodb->where($data)->get('profile');
-
+        echo "Hello Github";
         return $result;
     }
 
